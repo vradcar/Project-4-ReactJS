@@ -5,34 +5,88 @@ Since CSS uses a global name space for classes we should use names starting with
 states- here.
 */
 .states-container {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  input[type="text"] {
-    padding: 5px;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .current-substring {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .state-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .state-list li {
-    font-size: 16px;
-    margin: 5px 0;
-  }
-  .state-list li::marker {
-    content: "";
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
 }
-  .no-results {
-    color: red;
-    font-size: 18px;
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.current-substring {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.state-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.state-list li {
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #007BFF;
+  font-weight: 500;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.state-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #f0f4ff;
+}
+
+.state-list li::marker {
+  content: "";
+}
+
+.no-results {
+  color: #ff4d4d;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .states-container {
+    padding: 15px;
   }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .state-list li {
+    width: 100%;
+    max-width: none;
+  }
+}
