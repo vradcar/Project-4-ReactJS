@@ -10,3 +10,93 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+
+/* App container styling */
+.app-container {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Fancy toolbar */
+.toolbar {
+  background-color: #4c6ef5; /* Nice blue */
+  padding: 20px;
+  border-bottom: 5px solid #82c91e; /* Bright green border */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Toolbar title */
+.toolbar-title {
+  color: white;
+  font-size: 2em;
+  margin: 0;
+  animation: titleFadeIn 2s ease-in-out;
+}
+
+/* Animation for title */
+@keyframes titleFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigation buttons */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual navigation buttons */
+.nav-button {
+  background-color: #74c0fc;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect on navigation buttons */
+.nav-button:hover {
+  background-color: #ff922b;
+  transform: scale(1.1); /* Enlarge on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* View container styling */
+.view-container {
+  padding: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for fading in views */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

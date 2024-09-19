@@ -1,0 +1,123 @@
+
+  /* Header container with parallax effect */
+  .header-container {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(135deg, #e79837, #f0dc7b);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 1s ease, transform 1s ease;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Content in the center */
+  .header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .logo-image {
+    width: 80px;
+    height: 80px;
+    animation: spin-logo 5s linear infinite;
+  }
+  
+  /* Keyframe for logo spin animation */
+  @keyframes spin-logo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .header-title {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-family: 'Verdana', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .header-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-family: 'Cursive', sans-serif;
+  }
+  
+  /* Navigation links */
+  .header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-nav li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .header-nav li a:hover {
+    color: #ffcccb;
+  }
+  
+  /* Moving background images */
+  .moving-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    opacity: 0.5;
+  }
+  
+  .moving-image {
+    width: 200px;
+    height: auto;
+    animation: move-images 15s linear infinite;
+  }
+  
+  /* Move images from left to right */
+  @keyframes move-images {
+    from {
+      transform: translateX(-200px);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Media query for responsive */
+  @media (max-width: 768px) {
+    .header-title {
+      font-size: 2rem;
+    }
+  
+    .header-subtitle {
+      font-size: 1rem;
+    }
+  
+    .moving-image {
+      width: 150px;
+    }
+  }

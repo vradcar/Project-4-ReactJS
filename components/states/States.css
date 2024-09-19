@@ -4,3 +4,35 @@ CSS for the Project 4, Problem 2 States component
 Since CSS uses a global name space for classes we should use names starting with
 states- here.
 */
+.states-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .current-substring {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .state-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .state-list li {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  .state-list li::marker {
+    content: "";
+}
+  .no-results {
+    color: red;
+    font-size: 18px;
+  }

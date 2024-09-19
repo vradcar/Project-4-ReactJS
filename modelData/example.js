@@ -16,6 +16,7 @@ if (models === undefined) {
 
 models.exampleModel = function () {
   return {
-    name: "Unknown Name",
+    name: "Neha Varad Ajit Nidhi Abhi",
+    motto: "Where Innovation Meets Creativity",
   };
 };
