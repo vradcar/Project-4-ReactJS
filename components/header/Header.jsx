@@ -26,7 +26,7 @@ class Header extends React.Component {
             </div>
             <div className="header-text">
               <h1 className="header-title">G6 Project 4 Onboarding: React</h1>
-              <p className="header-subtitle">"Where Innovation Meets Creativity"</p>
+              <p className="header-subtitle">&quot;Where Innovation Meets Creativity&quot;</p>
             </div>
             
           </div>
@@ -34,8 +34,8 @@ class Header extends React.Component {
           {/* Moving background pictures */}
           
           <div className="moving-images">
-            <img src="https://cdn.discordapp.com/attachments/870538420953423912/1286141688867192863/NodeLogo.png?ex=66ecd449&is=66eb82c9&hm=1639b9b6f2652b42a9e8da6380e51b927597dd597c60be158471f0a7df4a6b2d&" className="moving-image" alt="Moving Image 1" />
-            <img src="https://cdn.discordapp.com/attachments/870538420953423912/1286141138767446016/NPMLogo.png?ex=66ecd3c6&is=66eb8246&hm=4dcb7aba4a871f780af46c920ead53d7326f71f4c962c28461d3c9c3fb5b69b6&" className="moving-image" alt="Moving Image 2" />
+            <img src="https://cdn.discordapp.com/attachments/870538420953423912/1286141688867192863/NodeLogo.png?ex=66ecd449&is=66eb82c9&hm=1639b9b6f2652b42a9e8da6380e51b927597dd597c60be158471f0a7df4a6b2d&" className="moving-image" alt="Moving 1" />
+            <img src="https://cdn.discordapp.com/attachments/870538420953423912/1286141138767446016/NPMLogo.png?ex=66ecd3c6&is=66eb8246&hm=4dcb7aba4a871f780af46c920ead53d7326f71f4c962c28461d3c9c3fb5b69b6&" className="moving-image" alt="Moving 2" />
           </div>
         </header>
       );

@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-//import React from 'react';
+// import React, {useState} from 'react';
+import React from 'react';
 import './States.css';
 /**
  * Define States, a React component of Project 4, Problem 2. The model
@@ -13,7 +13,7 @@ class States extends React.Component {
     this.state = {
       substring: '',
       allStates: [],
-    }
+    };
     this.handleInputChange = this.handleInputChange.bind(this);
   }
 
@@ -75,7 +75,7 @@ class States extends React.Component {
               ))}
             </ul>
           ) : (
-            <p className="no-results">No states match the substring "{substring}"</p>
+            <p className="no-results">No states match the substring &quot;{substring}&quot;</p>
           )}
         </div>
       </div>

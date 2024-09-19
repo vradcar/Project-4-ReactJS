@@ -105,8 +105,8 @@ class Example extends React.Component {
 
         <div className="motto-update">
           {/* Your problem #1 motto displaying and updating widget goes here */}
-          <h1>My name is "{this.state.name}".</h1>
-          <p>Motto: "{this.state.motto}".</p>
+          <h1>My name is &quot;{this.state.name}&quot;.</h1>
+          <p>Motto: &quot;{this.state.motto}&quot;.</p>
         </div>
 
         <p>

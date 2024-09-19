@@ -41,8 +41,9 @@ import Example from './components/example/Example';
 
   ReactDOM.render(
     <>
-  <Header />,
-  <ViewSwitcher />, 
-  </>,
-  document.getElementById('reactapp')
-);
+      <Header />
+      <ViewSwitcher />
+    </>,
+    document.getElementById('reactapp')
+  );
+  
